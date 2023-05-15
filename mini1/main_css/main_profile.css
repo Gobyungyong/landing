@@ -42,8 +42,10 @@ main {
 
 .iner {
     position: absolute;  
-    left: 25rem;
+    left: 25rem;    
     padding: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .hello {
@@ -146,4 +148,8 @@ main {
 
 div[class*=hi] {
     font-size: 3rem;
+}
+
+.wrapper {
+    display: flex;
 }
