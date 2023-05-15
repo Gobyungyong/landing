@@ -1,0 +1,101 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 25rem;
+    border-right: 0.2rem solid rgba(31, 115, 184, 0.619);
+    background-color: rgba(31, 115, 184, 0.06);
+}
+
+.prof_img {
+    display: block;
+    width: 15rem;
+    height: 15rem;
+    position: relative ;
+    top: 5.1rem;
+    background: url("/images/oz_icon.png") no-repeat;
+    background-size: cover;
+}
+
+.prof_introduction {
+    position: relative;
+    top: 10.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.logout {
+    position: relative;
+    top: 15.3rem;
+    color: blue;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.iner {
+    position: absolute;  
+    left: 25rem;
+    padding: 50px;
+}
+
+.hello {
+    font-size: 6rem;
+}
+
+@keyframes hello {
+
+    from {
+        /* margin-left: 100%; */
+        opacity: 0;
+        font-size: 0;
+    }
+
+    to {
+        /* margin-left: 0%; */
+        opacity: 1;
+        font-size: 6rem;
+    }
+}
+
+@keyframes smaller {
+    from {
+        opacity: 0;
+        font-size: 0;
+    }    
+
+    to {
+        opacity: 1;
+        font-size: 3rem;
+    }
+}
+
+.hello {
+    animation: hello;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+.hi2 {
+    animation: smaller;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    position: relative;
+}
+
+div[class*=hi] {
+    font-size: 3rem;
+}

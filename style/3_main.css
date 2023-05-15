@@ -1,0 +1,22 @@
+.section {
+    padding: 64px 16px;
+    text-align: center; 
+}
+
+.section_tag {
+    font-size: 26px;
+    color: blueviolet;
+}
+
+.section_title {
+    font-size: 72px;
+    font-weight: bold;
+    color: gray;
+}
+
+@media(min-width: 769px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

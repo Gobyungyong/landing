@@ -1,17 +1,17 @@
-.flex {
+/* .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
+} */
 
-.flex div {
+/* .flex div {
     display: none;
-}
+} */
 
 @media (max-width: 480px) {
-    /* .stable {
+    .stable {
         display: none;
     }
     .ltable {
@@ -19,13 +19,13 @@
     }
     .pc {
         display: none;
-    } */
+    }
     .mobile {
-        display: inherit;
-        /* flex-direction: column;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; */
+        height: 100vh;
     }
     html {
         background-color: aqua;
@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    /* .mobile {
+    .mobile {
         display: none;
     }
     .ltable {
@@ -41,13 +41,13 @@
     }
     .pc {
         display: none;
-    } */
+    }
     .stable {
-        display: inherit;
-        /* flex-direction: column;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; */
+        height: 100vh;
     }
     html {
         background-color: blue;
@@ -55,7 +55,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    /* .mobile {
+    .mobile {
         display: none;
     }
     .stable {
@@ -63,13 +63,13 @@
     }
     .pc {
         display: none;
-    } */
+    }
     .ltable {
-        display: inherit;
-        /* flex-direction: column;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; */
+        height: 100vh;
     }
     html {
         background-color: violet;
@@ -77,7 +77,7 @@
 }
 
 @media (min-width: 1024px){
-    /* .mobile {
+    .mobile {
         display: none;
     }
     .ltable {
@@ -85,13 +85,13 @@
     }
     .stable {
         display: none;
-    } */
+    }
     .pc {
-        display: inherit;
-        /* flex-direction: column;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh; */
+        height: 100vh;
     }
     html {
         background-color: pink;

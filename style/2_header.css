@@ -1,9 +1,10 @@
 /* 스크롤이 내려갔을 때 header를 상단에 고정시키는 proterty value */
-header {
+header.top {
     position: sticky;
     display: flex;
     z-index: 2;
-    top: 72px;
+    top: 0px;
+    height: 72px;
     justify-content: space-between;
     align-items: center;
     background-color: darkviolet;
@@ -93,7 +94,6 @@ a태그에 dercoration:none을 달아줘야 없어진다. */
     .intro__type {
         padding: 0;
         font-size: 49px;
-        color: rgb(49, 67, 13);
     }
 
 }

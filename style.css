@@ -3,7 +3,8 @@
 @import url("./style/2_header.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap%22");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap%22");
-
+@import url(./style/3_main.css);
+@import url(./style/4_about.css);
 body {
     margin: 0;
     font-family: "Noto Sans KR", snas-serif;
