@@ -9,7 +9,6 @@
     <title>회원가입</title>
     <script>
         const input = function() {
-
             let email = document.querySelector("#user_email").value ;
             let name = document.querySelector("#user_name").value ;
             let pasw1 = document.querySelector("#user_pasw1").value ;
@@ -22,9 +21,11 @@
             
             console.log(email, name, pasw1, pasw2, phonenum1, phonenum2, phonenum3, region, gender)
 
-            let phonenumber = [phonenum1, phonenum2, phonenum3]
+            let phonenumber = phonenum1+"-"+phonenum2+"-"+phonenum3
 
             let signup = [email, name, pasw1, pasw2, phonenumber, region, gender];
+
+            console.log(signup)
 
             let signup2 = {
                 email: signup[0],
