@@ -39,7 +39,17 @@
     line-height: 3em;
 }
 
-#phone {
+#phone1 {
+    height: 3em;
+    width: 100px;
+}
+
+#phone2 {
+    height: 3em;
+    width: 100px;
+}
+
+#phone3 {
     height: 3em;
     width: 100px;
 }

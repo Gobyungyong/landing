@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다함께 javajava~</title>
+    <script>
+        const dataForm = function() {
+            let year = document.querySelector("#year_input").value;
+            let month = document.querySelector("#month_input").value;
+            let day = document.querySelector("#day_input").value;
+            console.log(year,month,day); 
+        };
+    </script>
+</head>
+<body>
+    <input id="year_input" class="input_box" /> -
+    <input id="month_input" class="input_box" /> -
+    <input id="day_input" class="input_box" />
+    <button onclick="dataForm()">버튼 눌러줘</button>
+</body>
+</html>
