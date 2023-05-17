@@ -13,15 +13,28 @@
             let name = document.querySelector("#user_name").value ;
             let pasw1 = document.querySelector("#user_pasw1").value ;
             let pasw2 = document.querySelector("#user_pasw2").value ;
-            let phonenum1 = document.querySelector("#phone1").value ;
-            let phonenum2 = document.querySelector("#phone2").value ;
-            let phonenum3 = document.querySelector("#phone3").value ;
+            // let phonenum1 = document.querySelector("#phone1").value ;
+            // let phonenum2 = document.querySelector("#phone2").value ;
+            // let phonenum3 = document.querySelector("#phone3").value ;
             let region = document.querySelector("select").value ;
-            let gender = document.querySelector("input[name='gender']:checked").value ;
-            
-            console.log(email, name, pasw1, pasw2, phonenum1, phonenum2, phonenum3, region, gender)
+            // let gender = document.querySelector("input[name='gender']:checked").value ;
 
-            let phonenumber = phonenum1+"-"+phonenum2+"-"+phonenum3
+            let gender = document.querySelector(".gender_f").checked;
+          
+            if (gender) {
+                gender="여성"
+            } else {
+                gender="남성"
+            };
+            
+            let phonenumber = document.querySelector("#phone1").value+"-"+document.querySelector("#phone2").value+"-"+document.querySelector("#phone3").value        
+           
+            console.log(email, name, pasw1, pasw2, phonenumber, region, gender)
+            
+
+            // let phonenumber = phonenum1+"-"+phonenum2+"-"+phonenum3
+            
+            // console.log(email, name, pasw1, pasw2, phonenum1, phonenum2, phonenum3, region, gender)
 
             let signup = [email, name, pasw1, pasw2, phonenumber, region, gender];
 
@@ -87,8 +100,8 @@
                 </div> 
                 
                 <div class="gendercheck">
-                    <input class="gender" type="radio" name="gender" value="female"> 여성
-                    <input class="gender" type="radio" name="gender" value="male"> 남성
+                    <input class="gender_f" type="radio" name="gender" value="female"> 여성
+                    <input class="gender_m" type="radio" name="gender" value="male"> 남성
                 </div>
 
                 <div class="flex5">

@@ -6,11 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다함께 javajava~</title>
     <script>
-        const dataForm = function() {
+        const dateForm = function() {
             let year = document.querySelector("#year_input").value;
             let month = document.querySelector("#month_input").value;
             let day = document.querySelector("#day_input").value;
-            console.log(year,month,day); 
+
+            let date = year + '-' + month + '-' + day;
+            // console.log(date); 
+            return date;
+        };
+
+        // - 함수표현식 const 함수명 = function(){}
+        // - 함수선언문 function 함수명(){} 
+        // - 화살표함수 const 함수명 =()=>{}
+        const counterMaker = function() {
+            const targetDateInput = dateForm();
+            const nowDate = new Date();
+            const targetDate = new Date(targetDateInput);
+            let remaining = (nowDate - targetDate) / 1000;
+
+            // console.log(typeof targetDateInput)
+            // console.log(typeof targetDate)
+            // console.log(remaining)
+            
+            const remainingDate = Math.floor([remaining / (60*60) / 24]);
+            const remainingHours = Math.floor(remaining / (60*60) % 24);
+            const remainingMin = Math.floor(remaining / 60) % 60;
+            const remainingSec = Math.floor(remaining) % 60;
+            console.log(remainingDate, remainingHours, remainingMin, remainingSec);
         };
     </script>
 </head>
@@ -18,6 +41,6 @@
     <input id="year_input" class="input_box" /> -
     <input id="month_input" class="input_box" /> -
     <input id="day_input" class="input_box" />
-    <button onclick="dataForm()">버튼 눌러줘</button>
+    <button onclick="counterMaker()">버튼 눌러줘</button>
 </body>
 </html>

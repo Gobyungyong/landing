@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // const obj = {
+        //     name: '희은',
+        //     age: 25,
+        //     job: 'front-end'
+        // };
+
+        // if(obj["name"] === '희은' && obj["age"] > 25) {
+        //     console.log("반가워 " + obj["name"])
+        // } else {
+        //     console.log('반가워 경비아저씨')
+        // }
+
+        // for(let i = 0; i < 10; i=i+1) {
+        //     console.log("졸려"+i)
+        // }
+
+        teacher={
+            age:25,
+            name:'병용',
+            address:'서울',
+            gender:'남'
+        }
+
+        let keys = Object.keys(teacher);
+        // keys=Object.keys(teacher);
+        
+        for(let i=0;i<Object.keys(teacher).length;i=i+1) {
+            console.log(keys[i])
+            console.log(teacher[keys[i]])
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
