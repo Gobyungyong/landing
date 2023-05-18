@@ -1,0 +1,147 @@
+.section2_container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50rem;
+}
+
+.section2_txt_name {
+    color: blue;
+}
+
+.section2_txt {
+    font-size: 20px;
+}
+
+.timer {
+    border: 2px solid white;
+    border-radius: 2px;
+    cursor: inherit;
+    padding : 5px;
+}
+
+.gosignup {
+    border: 1px solid white;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section5 {
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* overflow: hidden; */
+}
+
+.signup {
+    height: 800px;
+    border: 1px solid white;
+    border-radius: 2%;
+    width: 500px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+.headline {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.flex1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.flexop {
+    height: 3em;
+    width: 325.67px;
+}
+
+.flex2 {
+    width: 325.67px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#phone1 {
+    height: 3em;
+    width: 100px;
+}
+
+#phone2 {
+    height: 3em;
+    width: 100px;
+}
+
+#phone3 {
+    height: 3em;
+    width: 100px;
+}
+
+.flexop2 {
+    height: 3em;
+    width: 325.67px;
+}
+
+.gendercheck {
+    font-size: 15px;
+}
+
+.flex4 {
+    margin-top: 30px;
+}
+
+.gendercheck {
+    margin-top: 30px;
+}
+
+.flex5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flexop3 {
+    border: 1px solid white;
+    width: 326.67px;
+    height: 3em;
+    background-color: white;
+}
+
+.checknum {
+    border: 1px solid black;
+    background-color: white;
+}
+
+.flex3 {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

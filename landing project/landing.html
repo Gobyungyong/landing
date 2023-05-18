@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./landing.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="section2">
+        <div class="section2_container">
+            <!-- <div class="section2_container_txt"> -->
+                <h2 class="section2_txt_name">스탠다드 요금으로 3개월 간 프리미엄 기능 이용 가능!</h2>
+                <p class="section2_txt">
+                    우리 부장님이 미쳤어요. 날마다 오는 기회가 아닙니다.<br />
+                    <!-- 250만원 상당의 프리미엄 요금제를 <b>1만5천원</b> 스탠다드 요금으로 이용할 수 있는 절호의 기회<br /> -->
+                    놓치지 마세요!
+                </p>
+            <!-- </div> -->
+            <div class="section2_timer">
+                <button class="timer" id="timer"></button>
+            </div>
+            <div class="section2_button">
+                <button class="gosignup"><a href="#section5">회원가입하러 가기</a></button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section5" id="section5">
+        
+        <form class="signup">
+            
+            <div class="headline">회원가입</div>
+            
+            <div class="flex1">
+                <div><label for="user_email"><input type="email" class="flexop" id="user_email" placeholder="이메일을 입력하세요."></label></div>
+                <div><label for="user_name"><input type="text" class="flexop" id="user_name" placeholder="이름을 입력하세요."></label></div>
+                <div><label for="user_pasw1"><input type="password" class="flexop" id="user_pasw1" placeholder="비밀번호를 입력하세요."></label></div>
+                <div><label for="user_pasw2"><input type="password" class="flexop" id="user_pasw2" placeholder="비밀번호를 다시 입력하세요."></label></div>
+            </div>
+
+            <div class="flex2">                   
+                <div><input id="phone1" maxlength="4"></div>
+                <div class="-"> -</div>
+                <div><input id="phone2" maxlength="4"></div> 
+                <div class="-"> -</div> 
+                <div><input id="phone3" maxlength="4"></div>
+            </div>
+
+            <div class="flex3">
+                <div>
+                    <span>000000</span>
+                    <button class="checknum" disabled>인증번호전송</button> 
+                </div>
+                <div class="check">
+                    <span>3:00</span> 
+                    <button class="checknum" disabled>인증 완료</button>
+                </div>
+            </div>
+                
+            <div class="flex4">
+                <select class="flexop2">
+                    <option selected disabled>요금제를 선택하세요.</option>
+                    <option>베이직</option>
+                    <option>스탠다드</option>
+                    <option disabled>프리미엄</option>
+                </select>
+            </div> 
+                
+            <div class="gendercheck">
+                <input class="gender_f" type="radio" name="gender" value="female"> 여성
+                <input class="gender_m" type="radio" name="gender" value="male"> 남성
+            </div>
+
+            <div class="flex5">
+                <button class="flexop3" onclick="input()">
+                    <a class="sign" href="#">가입하기</a>
+                </button>
+            </div>
+
+        </form>
+    </section>
+    <section class="footer"></section>
+</body>
+</html>
