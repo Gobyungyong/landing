@@ -1,33 +1,24 @@
-const countDownTimer = function (id, date) {
-    var _vDate = new Date(date);
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
+let countDownDate = new Date("May 22, 2023 23:59:59").getTime();
 
-    function showRemaining() {
-        var now = new Date();
-        var distDt = _vDate - now;
+let x = setInterval(function() {
 
-        var days = Math.floor(distDt / _day);
-        var hours = Math.floor((distDt % _day) / _hour);
-        var minutes = Math.floor((distDt % _hour) / _minute);
-        var seconds = Math.floor((distDt % _minute) / _second);
+  let now = new Date().getTime();
 
-        document.getElementById(id).textContent = '이벤트 종료까지 ~ ';
-        document.getElementById(id).textContent += hours + ': ';
-        document.getElementById(id).textContent += minutes + ': ';
-        document.getElementById(id).textContent += seconds;
-    }
+  let distance = countDownDate - now;
 
-    timer = setInterval(showRemaining, 1000);
-}
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-var dateObj = new Date();
-dateObj.setDate(dateObj.getDate() + 1);
+  document.getElementById("demo").innerHTML = "이벤트 종료까지 ~ " + days + "일 " +
+  hours + "시간 " + minutes + "분 " + seconds + "초 ";
 
-countDownTimer('timer', 29/05/2023);
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 
 const input = function() {
     let email = document.querySelector("#user_email").value ;
