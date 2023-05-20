@@ -1,4 +1,8 @@
 let countDownDate = new Date("May 22, 2023 23:59:59").getTime();
+// let countDownDate = new Date("May 18, 2023 23:59:59").getTime();
+let now = new Date();
+let countDown = new Date("May 22, 2023 23:59:59")
+console.log(now, countDown)
 
 let x = setInterval(function() {
 
@@ -16,8 +20,9 @@ let x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "이벤또가 종료되었습니다.";
   }
+  
 }, 1000);
 
 const input = function() {
@@ -25,28 +30,34 @@ const input = function() {
     let name = document.querySelector("#user_name").value ;
     let pasw1 = document.querySelector("#user_pasw1").value ;
     let pasw2 = document.querySelector("#user_pasw2").value ;
-    let ratePlan = document.querySelector("select").value ;
-
-    let gender = document.querySelector(".gender_f").checked;
-  
-    if (gender) {
-        gender="여성"
-    } else {
-        gender="남성"
-    };
-    
-    let phonenumber = document.querySelector("#phone1").value+"-"+document.querySelector("#phone2").value+"-"+document.querySelector("#phone3").value        
-   
+     
     let signup2 = {
         email: email,
         name: name,
         pasw1: pasw1,
         pasw2: pasw2,
-        phonenumber: phonenumber,
-        ratePlan: ratePlan,
-        gender: gender
     };
 
     console.log(signup2);
 
 }
+
+window.addEventListener("scroll", 
+function() {
+    if(this.window.scrollY > 10) {
+        document.querySelector(".nav_bar")
+        .style = "background-color:black; color:white";
+    } else {
+        document.querySelector(".nav_bar")
+        .style = "background-color:none";
+    };
+  }
+)
+
+if(countDown-now < -60000) {
+  console.log("expired");
+  console.log(countDown-now);
+} else {
+  console.log("event");
+  console.log(countDown-now);
+};

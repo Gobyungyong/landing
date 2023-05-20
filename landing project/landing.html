@@ -9,80 +9,90 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <section class="section2">
-        <div class="section2_container">
-            <!-- <div class="section2_container_txt"> -->
-                <h2 class="section2_txt_name">스탠다드 요금으로 3개월 간 프리미엄 요금제 이용 가능!</h2>
-                <div class="nosale">
-                    2,500,000원
+
+    <header>
+        <div class="nav_container">
+            <div class="nav_bar">
+                <div class="nav_icon">
+                    <a class="home_link" href="./landing.html">티밍</a>
                 </div>
-                <div class="arrow">
-                    👇
+                <div class="nav_menu">
+                    <button class="nav_item_1"><a href="#section1">메인</a></button>
+                    <button class="nav_item_2"><a href="#section2">section2</a></button>
+                    <button class="nav_item_3"><a href="#section3">section3</a></button>
+                    <button class="nav_item_4"><a href="#section4">section4</a></button>
+                    <button class="nav_item_5"><a href="#section5">회원가입</a></button>
+                    <!-- 버튼 태그 뒤에 a링크 걸어서 id로 섹션 연결해주면 클릭시 거기로 감 -->
+                    <!-- ++스크롤 내리다보면 container background색 변하는 거 만들기 -섹션 받고 나서 -->
                 </div>
-                <div class="discount">
-                    15,000원
+                <div class="nav_btn"><input type="checkbox"></input></div>
+                <div class="nav_login">
+                    <a href="./landing_login.html" target="_blank">로그인</a>
                 </div>
-                <p class="section2_txt">
-                    우리 부장님이 미쳤어요. 날마다 오는 기회가 아닙니다.<br />
-                    프리미엄 요금제를 스탠다드 요금으로 이용할 수 있는 절호의 기회<br />
-                    놓치지 마세요!
-                </p>
-            <!-- </div> -->
+            </div>
+        </div>
+    </header>
+
+    <section class="section1" id="section1">
+        <div class="section1_container">
+            <h2 class="section1_txt_name">스탠다드 요금으로 3개월 간 프리미엄 요금제 이용 가능!</h2>
+            <div class="nosale">
+                2,500,000원
+            </div>
+            <div class="arrow">
+                👇
+            </div>
+            <div class="discount">
+                15,000원
+            </div>
+        </div>
+        <div class="section1_container2">
+            <p class="section1_txt">
+                우리 부장님이 미쳤어요. 날마다 오는 기회가 아닙니다.<br />
+                프리미엄 요금제를 스탠다드 요금으로 이용할 수 있는 절호의 기회<br />
+                놓치지 마세요!
+            </p>
             <div class="timer">    
                 <div id="demo"></div>
             </div>        
-            <div class="section2_button">
-                <button class="gosignup"><a href="#section5">회원가입하러 가기</a></button>
+            <div class="section1_button">
+                <button><a class="gosignup" href="#section5">회원가입하러 가기</a></button>
             </div>
         </div>
     </section>
-    
-    <section class="section5" id="section5">
+
+    <section id="section2" class="section2">
+        <div class="container">
+            <div class="section2_container_flex">
+                <div class="text_main">
+                    <span class="section2_span">티밍</span>은<br />
+                    다양한 컨텐츠를 가지고 있어요!
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="box2"><div class="text2">드라마</div></div>
+                <div class="box4"><div class="text4">교육</div></div>
+            </div>
+            <div class="wrapper2">
+                <div class="box1"><div class="text1">영화</div></div>
+                <div class="box3"><div class="text3">예능</div></div>
+                <div class="box5"><div class="text5">애니메이션</div></div>
+            </div>
+        </div>
+    </section>
         
+    <section class="section5" id="section5">
+            
         <form class="signup">
-            
+                
             <div class="headline">회원가입</div>
-            
+                
             <div class="flex1">
                 <div><label for="user_email"><input type="email" class="flexop" id="user_email" placeholder="이메일을 입력하세요."></label></div>
                 <div><label for="user_name"><input type="text" class="flexop" id="user_name" placeholder="이름을 입력하세요."></label></div>
                 <div><label for="user_pasw1"><input type="password" class="flexop" id="user_pasw1" placeholder="비밀번호를 입력하세요."></label></div>
                 <div><label for="user_pasw2"><input type="password" class="flexop" id="user_pasw2" placeholder="비밀번호를 다시 입력하세요."></label></div>
             </div>
-
-            <!-- <div class="flex2">                   
-                <div><input id="phone1" maxlength="4"></div>
-                <div class="-"> -</div>
-                <div><input id="phone2" maxlength="4"></div> 
-                <div class="-"> -</div> 
-                <div><input id="phone3" maxlength="4"></div>
-            </div> -->
-
-            <!-- <div class="flex3">
-                <div>
-                    <span>000000</span>
-                    <button class="checknum" disabled>인증번호전송</button> 
-                </div>
-                <div class="check">
-                    <span>3:00</span> 
-                    <button class="checknum" disabled>인증 완료</button>
-                </div>
-            </div> -->
-                
-            <!-- <div class="flex4">
-                <select class="flexop2">
-                    <option selected disabled>요금제를 선택하세요.</option>
-                    <option>베이직</option>
-                    <option>스탠다드</option>
-                    <option disabled>프리미엄</option>
-                </select>
-            </div>  -->
-                
-            <!-- <div class="gendercheck">
-                <input class="gender_f" type="radio" name="gender" value="female"> 여성
-                <input class="gender_m" type="radio" name="gender" value="male"> 남성
-            </div> -->
 
             <div class="flex5">
                 <button class="flexop3" onclick="input()">
@@ -92,6 +102,8 @@
 
         </form>
     </section>
-    <section class="footer"></section>
+    <section class="footer">
+        
+    </section>
 </body>
 </html>

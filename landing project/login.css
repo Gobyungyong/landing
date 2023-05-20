@@ -10,24 +10,12 @@ video {
   object-fit: cover;
 }
 
-video::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  /* z-index: 2; */
-  background: rgb(0, 0, 0);
-  opacity: 0.6;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
 }
-.wrapper {
+.login_wrapper {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -36,13 +24,14 @@ body {
   overflow: hidden;
   padding: 0;
 }
-.container {
+.login_container {
   border-radius: 10px;
   box-shadow: -5px -5px 10px #292323, 5px 5px 10px #292323;
   position: absolute;
   width: 768px;
   min-height: 480px;
   overflow: hidden;
+  z-index: 10;
 }
 form {
   background: #ebecf0;
@@ -52,6 +41,7 @@ form {
   height: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .input {
   background: #eee;
@@ -83,9 +73,9 @@ form {
   box-shadow: inset 1px 1px 2px #babebc, inset -1px -1px 2px #fff;
 }
 .overlay_btn {
-  background-color: #ff4b2b;
+  background-color: yellowgreen;
   color: #fff;
-  box-shadow: -5px -5px 10px #ff6b3f, 5px 5px 8px #bf4b2b;
+  box-shadow: -5px -5px 10px rgb(103, 139, 32), 5px 5px 8px rgb(103, 139, 32);
 }
 .sign-in-container {
   position: absolute;
@@ -113,7 +103,7 @@ form {
   width: 50%;
   height: 100%;
   opacity: 0;
-  background-color: #ff4b2b;
+  background-color: yellowgreen;
   color: #fff;
   transition: all 0.5s;
 }
@@ -127,24 +117,24 @@ form {
   right: 0;
   width: 50%;
   height: 100%;
-  background-color: #ff4b2b;
+  background-color: yellowgreen;
   color: #fff;
   transition: all 0.5s;
 }
-.container.right-panel-active .sign-in-container {
+.login_container.right-panel-active .sign-in-container {
   transform: translateX(100%);
   opacity: 0;
 }
-.container.right-panel-active .sign-up-container {
+.login_container.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 1;
   z-index: 2;
 }
-.container.right-panel-active .overlay-right {
+.login_container.right-panel-active .overlay-right {
   transform: translateX(-100%);
   opacity: 0;
 }
-.container.right-panel-active .overlay-left {
+.login_container.right-panel-active .overlay-left {
   transform: translateX(-100%);
   opacity: 1;
   z-index: 2;
@@ -188,6 +178,19 @@ span {
   box-shadow: inset 1px 1px 2px #babebc, inset -1px -1px 2px #fff;
 }
 
-.overlay-right p {
-    text-align: center;
+.overlay-right p,
+.overlay-left p {
+  text-align: center;
+}
+
+.main_login::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  background: rgb(0, 0, 0);
+  opacity: 0.67;
 }

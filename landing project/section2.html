@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="Viewport" content="width-device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./header.css" />
+        <link rel="stylesheet" href="./section2.css" />
+        <!-- <link rel="stylesheet" href="login.css"> -->
+        <script src="./project.js"></script>
+        <title>document</title>
+    </head>
+    <!-- <script>
+        $(document).ready(function () {
+            /* 1 */
+            $(window).scroll(function () {
+                /* 2 */
+                $('.text_main').each(function (i) {
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+                    /* 3 */
+                    if (bottom_of_window > bottom_of_object / 2) {
+                        $(this).animate({ opacity: '1' }, 500);
+                    }
+                });
+            });
+        });
+    </script> -->
+    <body>
+        <header>
+            <div class="nav_container">
+                <div class="nav_bar">
+                    <div class="nav_icon">
+                        <a class="home_link" href="section2.html">티밍</a>
+                    </div>
+                    <div class="nav_menu">
+                        <button class="nav_item_1">section1</button>
+                        <button class="nav_item_2" onclick="section2_button()">section2</button>
+                        <button class="nav_item_3" onclick="section3_button()">section3</button>
+                        <button class="nav_item_4" onclick="section4_button()">section4</button>
+                        <button class="nav_item_5" onclick="section5_button()">section5</button>
+                        <!-- 버튼 태그 뒤에 a링크 걸어서 id로 섹션 연결해주면 클릭시 거기로 감 -->
+                        <!-- ++스크롤 내리다보면 container background색 변하는 거 만들기 -섹션 받고 나서 -->
+                    </div>
+                    <div class="nav_btn"><input type="checkbox"></input></div>
+                    <div class="nav_login">
+                        <a href="landing_login.html" target="_blank">로그인</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="section2" class="section2">
+            <div class="container">
+                <div class="text_main">
+                    <span>티밍</span>은<br />
+                    다양한 컨텐츠를 가지고 있어요!
+                </div>
+                <div class="wrapper">
+                    <div class="box1"><div class="text1">영화</div></div>
+                    <div class="box2"><div class="text2">드라마</div></div>
+                    <div class="box3"><div class="text3">예능</div></div>
+                    <div class="box4"><div class="text4">교육</div></div>
+                    <div class="box5"><div class="text5">애니메이션</div></div>
+                </div>
+            </div>
+        </section>
+        <!-- <div id="section3"></div>
+        <div id="section4"></div>
+        <div id="section5"></div>
+        <div id="footer"></div> -->
+
+    </body>
+</html>
